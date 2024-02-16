@@ -18,12 +18,35 @@ const OnDuty = ({ data }) => {
 			hover: { filter: { type: 'lighten', value: 0.5 } },
 			active: { filter: { type: 'none', value: 0 } },
 		},
+		labels: ['On Duty', 'Total'],
 		stroke: { width: 3 },
 		plotOptions: {
 			pie: {
 				donut: {
 					labels: {
 						show: true,
+						name: {
+							show: true,
+							fontSize: '12px',
+							fontFamily: 'Helvetica, Arial, sans-serif',
+							fontWeight: 600,
+							color: '#373d3f',
+							offsetY: -10,
+							formatter: function (val) {
+								return val;
+							},
+						},
+						value: {
+							show: true,
+							fontSize: '14px',
+							fontFamily: 'Helvetica, Arial, sans-serif',
+							fontWeight: 400,
+							color: '#373d3f',
+							offsetY: 16,
+							formatter: function (val) {
+								return val;
+							},
+						},
 						total: {
 							label: '',
 							show: true,

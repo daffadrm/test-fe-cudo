@@ -1,3 +1,3 @@
 # test fe cudo
 
-LIVE LINK: ''
+LIVE LINK: 'https://test-fe-cudo.netlify.app/'
